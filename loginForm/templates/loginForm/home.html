@@ -1,0 +1,13 @@
+{% extends 'loginForm/base.html' %}
+{% load static %}
+{% load crispy_forms_tags %}
+{% block content %}
+<div class="container">
+  <h1>Welcome to Login System</h1>
+  <div class="border-top pt-3">
+    <small class="text-muted">Already have an account?
+      <a class="ml-2" href="{% url 'login' %}">Sign In</a>
+    </small>
+  </div>
+</div>
+{% endblock %}
